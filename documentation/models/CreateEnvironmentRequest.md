@@ -13,7 +13,7 @@
 | Name   | Type                     | Required | Description                                    |
 | :----- | :----------------------- | :------- | :--------------------------------------------- |
 | Name   | string                   | ✅       | The environment's name.                        |
-| Values | List<EnvironmentValues1> | ❌       | Information about the environment's variables. |
+| Values | List`<EnvironmentValues1>` | ❌       | Information about the environment's variables. |
 
 # EnvironmentValues1
 

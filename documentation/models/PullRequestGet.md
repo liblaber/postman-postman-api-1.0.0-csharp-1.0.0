@@ -17,7 +17,7 @@
 | Destination\_ | Destination     | ❌       | Information about the pull request destination element.                                                                                                                                                                |
 | Status        | string          | ❌       | The pull request's current review status: - `open` — The pull request is still open. - `approved` — The pull request was approved by its reviewers. - `declined` — The pull request was not approved by its reviewers. |
 | Merge\_       | Merge           | ❌       | Information about the current progress of the pull request's merge.                                                                                                                                                    |
-| Reviewers\_   | List<Reviewers> | ❌       | Information about the reviewers assigned to the pull request.                                                                                                                                                          |
+| Reviewers\_   | List`<Reviewers>` | ❌       | Information about the reviewers assigned to the pull request.                                                                                                                                                          |
 
 # Source
 

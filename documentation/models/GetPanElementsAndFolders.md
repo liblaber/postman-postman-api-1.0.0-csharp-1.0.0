@@ -4,8 +4,8 @@
 
 | Name       | Type                         | Required | Description                                                                                                |
 | :--------- | :--------------------------- | :------- | :--------------------------------------------------------------------------------------------------------- |
-| Elements\_ | List<Elements>               | ❌       | Information about a Private API Network's folder elements. Elements are APIs, collections, and workspaces. |
-| Folders\_  | List<Folders>                | ❌       | Information about the Private API Network's folders.                                                       |
+| Elements\_ | List`<Elements>`               | ❌       | Information about a Private API Network's folder elements. Elements are APIs, collections, and workspaces. |
+| Folders\_  | List`<Folders>`                | ❌       | Information about the Private API Network's folders.                                                       |
 | Meta       | GetPanElementsAndFoldersMeta | ❌       | The response's non-standard meta information.                                                              |
 
 # Elements

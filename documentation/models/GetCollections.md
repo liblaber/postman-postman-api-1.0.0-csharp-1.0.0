@@ -4,7 +4,7 @@
 
 | Name        | Type                            | Required | Description |
 | :---------- | :------------------------------ | :------- | :---------- |
-| Collections | List<GetCollectionsCollections> | ❌       |             |
+| Collections | List`<GetCollectionsCollections>` | ❌       |             |
 
 # GetCollectionsCollections
 

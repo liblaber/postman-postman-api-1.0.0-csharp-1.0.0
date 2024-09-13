@@ -4,7 +4,7 @@
 
 | Name        | Type                                     | Required | Description |
 | :---------- | :--------------------------------------- | :------- | :---------- |
-| Collections | List<ImportOpenApiDefinitionCollections> | ❌       |             |
+| Collections | List`<ImportOpenApiDefinitionCollections>` | ❌       |             |
 
 # ImportOpenApiDefinitionCollections
 

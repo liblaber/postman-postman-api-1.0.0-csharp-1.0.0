@@ -4,7 +4,7 @@
 
 | Name      | Type                                      | Required | Description                                        |
 | :-------- | :---------------------------------------- | :------- | :------------------------------------------------- |
-| Request\_ | List<RespondPanElementAddRequestRequest2> | ❌       | Information about the Private API Network request. |
+| Request\_ | List`<RespondPanElementAddRequestRequest2>` | ❌       | Information about the Private API Network request. |
 
 # RespondPanElementAddRequestRequest2
 

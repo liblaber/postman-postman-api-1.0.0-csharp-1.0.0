@@ -4,7 +4,7 @@
 
 | Name | Type                                | Required | Description |
 | :--- | :---------------------------------- | :------- | :---------- |
-| Data | List<GetCollectionPullRequestsData> | ❌       |             |
+| Data | List`<GetCollectionPullRequestsData>` | ❌       |             |
 
 # GetCollectionPullRequestsData
 

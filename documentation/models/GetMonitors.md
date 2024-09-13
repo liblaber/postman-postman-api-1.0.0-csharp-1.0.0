@@ -4,7 +4,7 @@
 
 | Name     | Type                      | Required | Description |
 | :------- | :------------------------ | :------- | :---------- |
-| Monitors | List<GetMonitorsMonitors> | ❌       |             |
+| Monitors | List`<GetMonitorsMonitors>` | ❌       |             |
 
 # GetMonitorsMonitors
 

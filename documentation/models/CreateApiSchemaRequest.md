@@ -7,7 +7,7 @@ Information about the API schema.
 | Name   | Type                        | Required | Description                                    |
 | :----- | :-------------------------- | :------- | :--------------------------------------------- |
 | Type\_ | CreateApiSchemaType1        | ✅       | The schema's type.                             |
-| Files  | List<CreateApiSchemaFiles1> | ✅       | The list of files that are part of the schema. |
+| Files  | List`<CreateApiSchemaFiles1>` | ✅       | The list of files that are part of the schema. |
 
 # CreateApiSchemaType1
 

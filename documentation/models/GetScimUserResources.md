@@ -4,9 +4,9 @@
 
 | Name         | Type            | Required | Description                                          |
 | :----------- | :-------------- | :------- | :--------------------------------------------------- |
-| Resources    | List<Resources> | ❌       | A list of user resources.                            |
+| Resources    | List`<Resources>` | ❌       | A list of user resources.                            |
 | ItemsPerPage | double          | ❌       | The number of items per response page.               |
-| Schemas      | List<string>    | ❌       |                                                      |
+| Schemas      | List`<string>`    | ❌       |                                                      |
 | StartIndex   | double          | ❌       | The index entry by which the returned results begin. |
 | TotalResults | double          | ❌       | The total number of results found.                   |
 

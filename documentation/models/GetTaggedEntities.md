@@ -15,7 +15,7 @@ An object containing the paginated elements.
 
 | Name       | Type           | Required | Description                                                |
 | :--------- | :------------- | :------- | :--------------------------------------------------------- |
-| Entities\_ | List<Entities> | ✅       | A list of the Postman elements that contain the given tag. |
+| Entities\_ | List`<Entities>` | ✅       | A list of the Postman elements that contain the given tag. |
 
 # Entities
 

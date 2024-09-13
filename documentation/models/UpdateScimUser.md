@@ -4,7 +4,7 @@
 
 | Name    | Type               | Required | Description                                                              |
 | :------ | :----------------- | :------- | :----------------------------------------------------------------------- |
-| Schemas | List<string>       | ❌       | The [SCIM schema URI](https://www.iana.org/assignments/scim/scim.xhtml). |
+| Schemas | List`<string>`       | ❌       | The [SCIM schema URI](https://www.iana.org/assignments/scim/scim.xhtml). |
 | Name    | UpdateScimUserName | ❌       | Information about the user's name.                                       |
 
 # UpdateScimUserName

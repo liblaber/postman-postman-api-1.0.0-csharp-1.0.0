@@ -13,9 +13,9 @@
 | UpdatedBy   | long                     | ❌       | The Postman ID of the user that updated the API.        |
 | Description | string                   | ❌       | The API's description.                                  |
 | GitInfo\_   | GitInfo                  | ❌       | Information about the API's Git repository integration. |
-| Schemas     | List<GetApi2Schemas>     | ❌       | The API's schemas.                                      |
-| Versions    | List<GetApi2Versions>    | ❌       | The API's versions.                                     |
-| Collections | List<GetApi2Collections> | ❌       | The API's collections.                                  |
+| Schemas     | List`<GetApi2Schemas>`     | ❌       | The API's schemas.                                      |
+| Versions    | List`<GetApi2Versions>`    | ❌       | The API's versions.                                     |
+| Collections | List`<GetApi2Collections>` | ❌       | The API's collections.                                  |
 
 # GitInfo
 

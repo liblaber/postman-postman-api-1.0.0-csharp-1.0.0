@@ -6,14 +6,14 @@ Information about Postman's SCIM API configurations and supported operations.
 
 | Name                    | Type                             | Required | Description                                                                                                                                   |
 | :---------------------- | :------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
-| Schemas                 | List<string>                     | ❌       | The [SCIM schema URI](https://www.iana.org/assignments/scim/scim.xhtml).                                                                      |
+| Schemas                 | List`<string>`                     | ❌       | The [SCIM schema URI](https://www.iana.org/assignments/scim/scim.xhtml).                                                                      |
 | DocumentationUri        | string                           | ❌       | A link to the URI's documentation.                                                                                                            |
 | Patch\_                 | Patch                            | ❌       | Information about patch configuration.                                                                                                        |
 | Bulk\_                  | Bulk                             | ❌       | Information about bulk configuration.                                                                                                         |
 | Filter\_                | Filter                           | ❌       | Information about the filter configuration.                                                                                                   |
 | ChangePassword\_        | ChangePassword                   | ❌       | Information about the change password configuration.                                                                                          |
 | Sort                    | GetScimServiceProviderConfigSort | ❌       | Information about the sort configuration.                                                                                                     |
-| AuthenticationSchemes\_ | List<AuthenticationSchemes>      | ❌       | A list of authentication schemes.                                                                                                             |
+| AuthenticationSchemes\_ | List`<AuthenticationSchemes>`      | ❌       | A list of authentication schemes.                                                                                                             |
 | Etag\_                  | Etag                             | ❌       | Information about the [entity tag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag) (Etag) HTTP response header configuration. |
 | Meta                    | GetScimServiceProviderConfigMeta | ❌       | The response's non-standard meta information.                                                                                                 |
 

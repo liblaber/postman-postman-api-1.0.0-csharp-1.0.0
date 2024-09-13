@@ -4,9 +4,9 @@
 
 | Name         | Type                    | Required | Description                                          |
 | :----------- | :---------------------- | :------- | :--------------------------------------------------- |
-| Resources    | List<ScimGroupResource> | ❌       | A list of group resources.                           |
+| Resources    | List`<ScimGroupResource>` | ❌       | A list of group resources.                           |
 | ItemsPerPage | double                  | ❌       | The number of items per response page.               |
-| Schemas      | List<string>            | ❌       |                                                      |
+| Schemas      | List`<string>`            | ❌       |                                                      |
 | StartIndex   | double                  | ❌       | The index entry by which the returned results begin. |
 | TotalResults | double                  | ❌       | The total number of results found.                   |
 

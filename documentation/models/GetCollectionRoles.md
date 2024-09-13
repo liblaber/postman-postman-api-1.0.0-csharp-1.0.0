@@ -6,9 +6,9 @@ Information about the collection's roles.
 
 | Name    | Type                         | Required | Description                             |
 | :------ | :--------------------------- | :------- | :-------------------------------------- |
-| Group\_ | List<Group>                  | ❌       | A list of the collection's group roles. |
-| Team    | List<GetCollectionRolesTeam> | ❌       | A list of the collection's team roles.  |
-| User    | List<GetCollectionRolesUser> | ❌       | A list of the collection's user roles.  |
+| Group\_ | List`<Group>`                  | ❌       | A list of the collection's group roles. |
+| Team    | List`<GetCollectionRolesTeam>` | ❌       | A list of the collection's team roles.  |
+| User    | List`<GetCollectionRolesUser>` | ❌       | A list of the collection's user roles.  |
 
 # Group
 

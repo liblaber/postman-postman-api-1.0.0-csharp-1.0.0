@@ -15,7 +15,7 @@ For a complete list of values, refer to the [collection.json schema file](https:
 | Name | Type                 | Required | Description                                                                                                                                                                                                                                   |
 | :--- | :------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Info | CollectionInfo1      | ✅       | An object that contains basic information about the collection. For a complete list of values, refer to the `definitions.info` entry in the [collection.json schema file](https://schema.postman.com/json/collection/v2.1.0/collection.json). |
-| Item | List<CollectionItem> | ❌       | Information about the collection's HTTP requests and responses. For a complete list of values, refer to the `definitions.item` entry in the [collection.json schema file](https://schema.postman.com/json/collection/v2.1.0/collection.json). |
+| Item | List`<CollectionItem>` | ❌       | Information about the collection's HTTP requests and responses. For a complete list of values, refer to the `definitions.item` entry in the [collection.json schema file](https://schema.postman.com/json/collection/v2.1.0/collection.json). |
 
 # CollectionInfo1
 

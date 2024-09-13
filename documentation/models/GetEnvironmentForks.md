@@ -4,7 +4,7 @@
 
 | Name | Type                          | Required | Description                                            |
 | :--- | :---------------------------- | :------- | :----------------------------------------------------- |
-| Data | List<GetEnvironmentForksData> | ❌       | A list of the environment's forks.                     |
+| Data | List`<GetEnvironmentForksData>` | ❌       | A list of the environment's forks.                     |
 | Meta | GetEnvironmentForksMeta       | ❌       | The response's meta information for paginated results. |
 
 # GetEnvironmentForksData
