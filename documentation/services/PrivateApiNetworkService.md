@@ -62,9 +62,9 @@ Publishes a element or creates a folder in your [Private API Network](https://le
 
 **Parameters**
 
-| Name  | Type                                                                          | Required | Description       |
-| :---- | :---------------------------------------------------------------------------- | :------- | :---------------- |
-| input | OneOf<PanCreateApi, PanCreateCollection, PanCreateWorkspace, PanCreateFolder> | ✅       | The request body. |
+| Name  | Type                                                                            | Required | Description       |
+| :---- | :------------------------------------------------------------------------------ | :------- | :---------------- |
+| input | OneOf`<PanCreateApi, PanCreateCollection, PanCreateWorkspace, PanCreateFolder>` | ✅       | The request body. |
 
 **Return Type**
 
@@ -94,11 +94,11 @@ Updates an element or folder in your [Private API Network](https://learning.post
 
 **Parameters**
 
-| Name        | Type                                                                          | Required | Description                                                                                                           |
-| :---------- | :---------------------------------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------- |
-| input       | OneOf<UpdatePanApi, UpdatePanCollection, UpdatePanWorkspace, UpdatePanFolder> | ✅       | The request body.                                                                                                     |
-| elementId   | string                                                                        | ✅       | The element's ID or UUID. For Postman Collections you must pass the collection's UID (`userId`-`collectionId`) value. |
-| elementType | UpdatePanElementOrFolderElementType                                           | ✅       | The element type.                                                                                                     |
+| Name        | Type                                                                            | Required | Description                                                                                                           |
+| :---------- | :------------------------------------------------------------------------------ | :------- | :-------------------------------------------------------------------------------------------------------------------- |
+| input       | OneOf`<UpdatePanApi, UpdatePanCollection, UpdatePanWorkspace, UpdatePanFolder>` | ✅       | The request body.                                                                                                     |
+| elementId   | string                                                                          | ✅       | The element's ID or UUID. For Postman Collections you must pass the collection's UID (`userId`-`collectionId`) value. |
+| elementType | UpdatePanElementOrFolderElementType                                             | ✅       | The element type.                                                                                                     |
 
 **Return Type**
 

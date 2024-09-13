@@ -15,10 +15,10 @@ Imports an OpenAPI definition into Postman as a new [Postman Collection](https:/
 
 **Parameters**
 
-| Name      | Type                               | Required | Description         |
-| :-------- | :--------------------------------- | :------- | :------------------ |
-| input     | OneOf<JsonSchema, JsonStringified> | ❌       | The request body.   |
-| workspace | string                             | ❌       | The workspace's ID. |
+| Name      | Type                                 | Required | Description         |
+| :-------- | :----------------------------------- | :------- | :------------------ |
+| input     | OneOf`<JsonSchema, JsonStringified>` | ❌       | The request body.   |
+| workspace | string                               | ❌       | The workspace's ID. |
 
 **Return Type**
 
