@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using PostmanClient.Http;
+using PostmanClient.Http.Exceptions;
+using PostmanClient.Http.Extensions;
 using PostmanClient.Http.Serialization;
 using PostmanClient.Models;
 
@@ -39,9 +41,9 @@ public class CollectionItemsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CreateCollectionFolder>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -77,9 +79,9 @@ public class CollectionItemsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CreateCollectionRequestOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -116,9 +118,9 @@ public class CollectionItemsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CreateCollectionResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -158,9 +160,9 @@ public class CollectionItemsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetCollectionFolder>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -200,9 +202,9 @@ public class CollectionItemsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<UpdateCollectionFolder>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -233,9 +235,9 @@ public class CollectionItemsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<DeleteCollectionFolder>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -275,9 +277,9 @@ public class CollectionItemsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetCollectionRequest>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -318,9 +320,9 @@ public class CollectionItemsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<UpdateCollectionRequest>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -351,9 +353,9 @@ public class CollectionItemsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<DeleteCollectionRequest>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -393,9 +395,9 @@ public class CollectionItemsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetCollectionResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -436,9 +438,9 @@ public class CollectionItemsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<UpdateCollectionResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -469,9 +471,9 @@ public class CollectionItemsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<DeleteCollectionResponse>(
                     _jsonSerializerOptions,
                     cancellationToken

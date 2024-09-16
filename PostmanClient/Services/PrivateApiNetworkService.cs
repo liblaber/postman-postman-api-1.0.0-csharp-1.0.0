@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using PostmanClient.Http;
+using PostmanClient.Http.Exceptions;
+using PostmanClient.Http.Extensions;
 using PostmanClient.Http.Serialization;
 using PostmanClient.Models;
 using PostmanClient.OneOf;
@@ -69,9 +71,9 @@ public class PrivateApiNetworkService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetPanElementsAndFolders>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -100,9 +102,9 @@ public class PrivateApiNetworkService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<OneOf<PanElementCreated, PanFolderCreated>>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -131,9 +133,9 @@ public class PrivateApiNetworkService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<OneOf<PanElementCreated, PanFolderCreated>>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -162,9 +164,9 @@ public class PrivateApiNetworkService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<OneOf<PanElementCreated, PanFolderCreated>>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -193,9 +195,9 @@ public class PrivateApiNetworkService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<OneOf<PanElementCreated, PanFolderCreated>>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -235,9 +237,9 @@ public class PrivateApiNetworkService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<OneOf<PanElementCreated, PanFolderCreated>>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -277,9 +279,9 @@ public class PrivateApiNetworkService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<OneOf<PanElementCreated, PanFolderCreated>>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -319,9 +321,9 @@ public class PrivateApiNetworkService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<OneOf<PanElementCreated, PanFolderCreated>>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -361,9 +363,9 @@ public class PrivateApiNetworkService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<OneOf<PanElementCreated, PanFolderCreated>>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -398,9 +400,9 @@ public class PrivateApiNetworkService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<DeletePanElementOrFolder>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -452,9 +454,9 @@ public class PrivateApiNetworkService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetAllPanAddElementRequests>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -483,9 +485,9 @@ public class PrivateApiNetworkService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<RespondPanElementAddRequestOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken

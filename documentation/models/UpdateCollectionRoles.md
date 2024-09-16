@@ -4,7 +4,7 @@
 
 | Name  | Type                             | Required | Description |
 | :---- | :------------------------------- | :------- | :---------- |
-| Roles | List`<UpdateCollectionRolesRoles>` | ✅       |             |
+| Roles | List<UpdateCollectionRolesRoles> | ✅       |             |
 
 # UpdateCollectionRolesRoles
 
@@ -14,7 +14,7 @@
 | :---- | :---------------- | :------- | :------------------------------------- |
 | Op    | RolesOp           | ✅       | The operation to perform on the path.  |
 | Path  | RolesPath1        | ✅       | The resource to perform the action on. |
-| Value | List`<RolesValue1>` | ✅       |                                        |
+| Value | List<RolesValue1> | ✅       |                                        |
 
 # RolesOp
 

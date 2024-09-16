@@ -16,7 +16,7 @@ Information about the collection's contents, such as requests and responses. For
 | Name | Type         | Required | Description                                                                                                                                                                                                   |
 | :--- | :----------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Info | DataInfo     | ❌       | Information about the collection.                                                                                                                                                                             |
-| Item | List`<object>` | ❌       | Information about the requests and responses in the collection. For a complete list of values, refer to the [collection.json schema file](https://schema.postman.com/json/collection/v2.1.0/collection.json). |
+| Item | List<object> | ❌       | Information about the requests and responses in the collection. For a complete list of values, refer to the [collection.json schema file](https://schema.postman.com/json/collection/v2.1.0/collection.json). |
 
 # DataInfo
 

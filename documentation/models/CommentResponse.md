@@ -4,7 +4,7 @@
 
 | Name | Type                      | Required | Description |
 | :--- | :------------------------ | :------- | :---------- |
-| Data | List`<CommentResponseData>` | ❌       |             |
+| Data | List<CommentResponseData> | ❌       |             |
 
 # CommentResponseData
 

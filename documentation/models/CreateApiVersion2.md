@@ -8,8 +8,8 @@ Information about the API version.
 | :----------- | :--------------------------------- | :------- | :----------------------------------------------------------------------- |
 | Name         | string                             | ✅       | The version's name.                                                      |
 | Branch       | string                             | ✅       | The branch ID.                                                           |
-| Schemas      | List`<CreateApiVersion2Schemas>`     | ✅       | A list of the version's schemas.                                         |
-| Collections  | List`<CreateApiVersion2Collections>` | ✅       | A list of the version's collections.                                     |
+| Schemas      | List<CreateApiVersion2Schemas>     | ✅       | A list of the version's schemas.                                         |
+| Collections  | List<CreateApiVersion2Collections> | ✅       | A list of the version's collections.                                     |
 | ReleaseNotes | string                             | ❌       | Information about the API version release. For example, changelog notes. |
 
 # CreateApiVersion2Schemas

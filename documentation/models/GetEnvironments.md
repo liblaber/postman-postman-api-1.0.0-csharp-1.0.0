@@ -4,7 +4,7 @@
 
 | Name         | Type                              | Required | Description |
 | :----------- | :-------------------------------- | :------- | :---------- |
-| Environments | List`<GetEnvironmentsEnvironments>` | ❌       |             |
+| Environments | List<GetEnvironmentsEnvironments> | ❌       |             |
 
 # GetEnvironmentsEnvironments
 

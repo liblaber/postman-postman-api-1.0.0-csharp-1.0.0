@@ -4,7 +4,7 @@
 
 | Name         | Type             | Required | Description |
 | :----------- | :--------------- | :------- | :---------- |
-| Workspaces\_ | List`<Workspaces>` | ❌       |             |
+| Workspaces\_ | List<Workspaces> | ❌       |             |
 
 # Workspaces
 

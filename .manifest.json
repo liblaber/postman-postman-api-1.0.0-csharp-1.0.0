@@ -1,8 +1,8 @@
 {
-  "liblabVersion": "2.1.23",
-  "date": "2024-07-25T14:08:28.137Z",
+  "liblabVersion": "2.3.2",
+  "date": "2024-09-16T20:04:17.124Z",
   "config": {
-    "apiId": 421,
+    "apiId": 1168,
     "sdkName": "postman_client",
     "sdkVersion": "1.0.0",
     "liblabVersion": "2",
@@ -10,7 +10,7 @@
     "languages": ["csharp"],
     "apiVersion": "1.0.0",
     "apiName": "postman_client",
-    "specFilePath": "./postman_openapi_ts_.yaml",
+    "specFilePath": "./apis/postman.yaml",
     "auth": ["apikey"],
     "languageOptions": {
       "csharp": {
@@ -40,7 +40,7 @@
         "header": "X-Api-Key"
       }
     },
-    "devContainer": false,
+    "devContainer": true,
     "generateEnv": true,
     "includeOptionalSnippetParameters": true,
     "inferServiceNames": false,
@@ -62,7 +62,6 @@
       "httpMethodsToRetry": ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"]
     },
     "multiTenant": true,
-    "specUrl": "https://dev-liblab-api-stack-specs.s3.us-east-1.amazonaws.com/421/open-api-spec.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA3C2RXH7MWUCMN7ON%2F20240725%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240725T140820Z&X-Amz-Expires=43200&X-Amz-Signature=e863970fcc926581621e6f55666ab1c3dda668c97d66d53847e9cf41ea28789c&X-Amz-SignedHeaders=host&x-id=GetObject",
     "includeWatermark": true,
     "packageId": "",
     "githubRepoName": "",
@@ -79,7 +78,7 @@
     "httpLibrary": {
       "name": "axios",
       "packages": {
-        "axios": "^1.6.8"
+        "axios": "^1.7.4"
       },
       "languages": ["typescript"]
     },
@@ -188,6 +187,9 @@
     "documentation/models/Details.md",
     "documentation/models/PanElementCreated.md",
     "documentation/models/PanFolderCreated.md",
+    ".devcontainer/devcontainer.json",
+    "PostmanClient/Http/ApiException.cs",
+    "PostmanClient/Http/HttpResponseMessageExtensions.ejs';}.cs",
     "PostmanClient/Services/BillingService.cs",
     "PostmanClient/Services/ImportService.cs",
     "PostmanClient/Services/PullRequestsService.cs",

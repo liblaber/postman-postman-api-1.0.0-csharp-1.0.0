@@ -7,7 +7,7 @@
 | Id        | string                       | ❌       | The task's ID.                                        |
 | Meta      | GetStatusOfAnAsyncTaskMeta   | ❌       | The response's non-standard meta information.         |
 | Status    | GetStatusOfAnAsyncTaskStatus | ❌       | The task's current status.                            |
-| Details   | OneOf`<Details1, Details2>`  | ❌       |                                                       |
+| Details   | OneOf<Details1, Details2>    | ❌       |                                                       |
 | CreatedAt | string                       | ❌       | The date and time at which the task was created.      |
 | UpdatedAt | string                       | ❌       | The date and time at which the task was last updated. |
 

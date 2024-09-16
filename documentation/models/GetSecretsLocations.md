@@ -4,7 +4,7 @@
 
 | Name | Type                          | Required | Description |
 | :--- | :---------------------------- | :------- | :---------- |
-| Data | List`<GetSecretsLocationsData>` | ❌       |             |
+| Data | List<GetSecretsLocationsData> | ❌       |             |
 | Meta | GetSecretsLocationsMeta       | ❌       |             |
 
 # GetSecretsLocationsData
@@ -47,7 +47,7 @@ The type of resource in which the secret was detected.
 
 | Name             | Type               | Required | Description                                                                 |
 | :--------------- | :----------------- | :------- | :-------------------------------------------------------------------------- |
-| ActivityFeed\_   | List`<ActivityFeed>` | ❌       | The history of the secret's resolution status changes.                      |
+| ActivityFeed\_   | List<ActivityFeed> | ❌       | The history of the secret's resolution status changes.                      |
 | Cursor           | string             | ❌       | The pointer to the first record of the set of paginated results.            |
 | Limit            | long               | ❌       | The maximum number of rows to return in the response.                       |
 | NextCursor       | string             | ❌       | The Base64-encoded value that points to the next record in the results set. |

@@ -6,7 +6,7 @@ Information about the task's resources.
 
 | Name      | Type                    | Required | Description |
 | :-------- | :---------------------- | :------- | :---------- |
-| Resources | List`<Details1Resources>` | ❌       |             |
+| Resources | List<Details1Resources> | ❌       |             |
 
 # Details1Resources
 

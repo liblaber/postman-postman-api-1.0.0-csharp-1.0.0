@@ -8,7 +8,7 @@ Information about the created API schema.
 | :-------- | :-------------------------- | :------- | :------------------------------------------------------ |
 | Id        | string                      | ❌       | The schema's ID.                                        |
 | Type\_    | CreateApiSchemaType2        | ❌       | The schema's type.                                      |
-| Files     | List`<CreateApiSchemaFiles2>` | ❌       | The list of the schema's files.                         |
+| Files     | List<CreateApiSchemaFiles2> | ❌       | The list of the schema's files.                         |
 | CreatedAt | string                      | ❌       | The date and time at which the schema was created.      |
 | CreatedBy | string                      | ❌       | The user ID of the user that created the schema.        |
 | UpdatedAt | string                      | ❌       | The date and time at which the schema was last updated. |

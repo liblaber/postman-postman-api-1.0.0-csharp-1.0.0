@@ -14,8 +14,8 @@ Information about the workspace's [user roles](https://learning.postman.com/docs
 
 | Name        | Type            | Required | Description                                                                                                                    |
 | :---------- | :-------------- | :------- | :----------------------------------------------------------------------------------------------------------------------------- |
-| User        | List`<RolesUser>` | ❌       | The list of user roles in the workspace.                                                                                       |
-| Usergroup\_ | List`<Usergroup>` | ❌       | Information about the workspace's [user group roles](https://learning.postman.com/docs/collaborating-in-postman/user-groups/). |
+| User        | List<RolesUser> | ❌       | The list of user roles in the workspace.                                                                                       |
+| Usergroup\_ | List<Usergroup> | ❌       | Information about the workspace's [user group roles](https://learning.postman.com/docs/collaborating-in-postman/user-groups/). |
 
 # RolesUser
 

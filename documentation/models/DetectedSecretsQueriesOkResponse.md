@@ -4,7 +4,7 @@
 
 | Name | Type                             | Required | Description                                            |
 | :--- | :------------------------------- | :------- | :----------------------------------------------------- |
-| Data | List`<DetectedSecretsQueriesData>` | ❌       |                                                        |
+| Data | List<DetectedSecretsQueriesData> | ❌       |                                                        |
 | Meta | DetectedSecretsQueriesMeta       | ❌       | The response's meta information for paginated results. |
 
 # DetectedSecretsQueriesData

@@ -22,7 +22,7 @@ Information about the schema's files. The response is paginated and limited to o
 
 | Name | Type            | Required | Description                 |
 | :--- | :-------------- | :------- | :-------------------------- |
-| Data | List`<FilesData>` | ❌       | A list of the schema files. |
+| Data | List<FilesData> | ❌       | A list of the schema files. |
 | Meta | FilesMeta       | ❌       |                             |
 
 # FilesData

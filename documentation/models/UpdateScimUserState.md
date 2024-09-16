@@ -4,8 +4,8 @@
 
 | Name       | Type                                | Required | Description                                                              |
 | :--------- | :---------------------------------- | :------- | :----------------------------------------------------------------------- |
-| Schemas    | List`<string>`                        | ❌       | The [SCIM schema URI](https://www.iana.org/assignments/scim/scim.xhtml). |
-| Operations | List`<UpdateScimUserStateOperations>` | ❌       | Information about the user update operation.                             |
+| Schemas    | List<string>                        | ❌       | The [SCIM schema URI](https://www.iana.org/assignments/scim/scim.xhtml). |
+| Operations | List<UpdateScimUserStateOperations> | ❌       | Information about the user update operation.                             |
 
 # UpdateScimUserStateOperations
 

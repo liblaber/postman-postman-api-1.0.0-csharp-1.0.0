@@ -19,8 +19,8 @@ Information about the API version.
 | CreatedAt    | string                   | ❌       | The date and time at which the version was created.      |
 | UpdatedAt    | string                   | ❌       | The date and time at which the version was last updated. |
 | ReleaseNotes | string                   | ❌       | The version's release notes.                             |
-| Schemas      | List`<VersionSchemas>`     | ❌       |                                                          |
-| Collections  | List`<VersionCollections>` | ❌       |                                                          |
+| Schemas      | List<VersionSchemas>     | ❌       |                                                          |
+| Collections  | List<VersionCollections> | ❌       |                                                          |
 
 # VersionSchemas
 

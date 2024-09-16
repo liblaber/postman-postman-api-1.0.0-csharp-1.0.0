@@ -5,7 +5,7 @@
 | Name       | Type                                 | Required | Description                                                                                                                                                                                                     |
 | :--------- | :----------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | User       | GetAuthenticatedUserUser             | ❌       | Information about the authenticated user.                                                                                                                                                                       |
-| Operations | List`<GetAuthenticatedUserOperations>` | ❌       | Information about operations and their usage limits. This object does not return for users with the [Guest role](https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#team-roles). |
+| Operations | List<GetAuthenticatedUserOperations> | ❌       | Information about operations and their usage limits. This object does not return for users with the [Guest role](https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#team-roles). |
 
 # GetAuthenticatedUserUser
 
@@ -24,7 +24,7 @@ Information about the authenticated user.
 | TeamId     | long         | ❌       | The team ID the user is assigned to. This returns a `0` value if the user is not assigned to a team.                                 |
 | TeamName   | string       | ❌       | The name of the team the user is assigned to.                                                                                        |
 | TeamDomain | string       | ❌       | The team's Postman domain ID.                                                                                                        |
-| Roles      | List`<string>` | ❌       | A list of the user's assigned [roles](https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#team-roles). |
+| Roles      | List<string> | ❌       | A list of the user's assigned [roles](https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#team-roles). |
 
 # GetAuthenticatedUserOperations
 

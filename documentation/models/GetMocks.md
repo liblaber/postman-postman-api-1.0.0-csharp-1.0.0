@@ -4,7 +4,7 @@
 
 | Name  | Type                | Required | Description |
 | :---- | :------------------ | :------- | :---------- |
-| Mocks | List`<GetMocksMocks>` | ❌       |             |
+| Mocks | List<GetMocksMocks> | ❌       |             |
 
 # GetMocksMocks
 
@@ -35,7 +35,7 @@ Information about the mock server's configuration.
 | Name             | Type         | Required | Description                                                                                                                                        |
 | :--------------- | :----------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Delay\_          | Delay        | ❌       | Information about the mock server's simulated network delay settings. This returns a null value if there are no configured network delay settings. |
-| Headers          | List`<string>` | ❌       | A list of the mock server's headers.                                                                                                               |
+| Headers          | List<string> | ❌       | A list of the mock server's headers.                                                                                                               |
 | MatchBody        | bool         | ❌       | If true, match the request body.                                                                                                                   |
 | MatchQueryParams | bool         | ❌       | If true, match query parameters.                                                                                                                   |
 | MatchWildcards   | bool         | ❌       | If true, use wildcard variable matching.                                                                                                           |

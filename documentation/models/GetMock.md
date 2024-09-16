@@ -33,7 +33,7 @@ Information about the mock server's configuration.
 
 | Name             | Type         | Required | Description                                                                                                           |
 | :--------------- | :----------- | :------- | :-------------------------------------------------------------------------------------------------------------------- |
-| Headers          | List`<string>` | ❌       | A list of the mock server's headers.                                                                                  |
+| Headers          | List<string> | ❌       | A list of the mock server's headers.                                                                                  |
 | MatchBody        | bool         | ❌       | If true, match the request body.                                                                                      |
 | MatchQueryParams | bool         | ❌       | If true, match query parameters.                                                                                      |
 | MatchWildcards   | bool         | ❌       | If true, use wildcard variable matching.                                                                              |

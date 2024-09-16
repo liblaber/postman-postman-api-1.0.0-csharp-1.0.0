@@ -4,7 +4,7 @@
 
 | Name | Type                     | Required | Description |
 | :--- | :----------------------- | :------- | :---------- |
-| Data | List`<GetSecretTypesData>` | ❌       |             |
+| Data | List<GetSecretTypesData> | ❌       |             |
 | Meta | GetSecretTypesMeta       | ❌       |             |
 
 # GetSecretTypesData

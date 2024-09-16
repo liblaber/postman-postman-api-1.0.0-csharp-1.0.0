@@ -4,7 +4,7 @@
 
 | Name       | Type                  | Required | Description                                                              |
 | :--------- | :-------------------- | :------- | :----------------------------------------------------------------------- |
-| Schemas    | List`<string>`          | ❌       | The [SCIM schema URI](https://www.iana.org/assignments/scim/scim.xhtml). |
+| Schemas    | List<string>          | ❌       | The [SCIM schema URI](https://www.iana.org/assignments/scim/scim.xhtml). |
 | Id         | string                | ❌       | The team member's SCIM ID.                                               |
 | UserName   | string                | ❌       | The team member's SCIM username.                                         |
 | Name       | ScimUserResourceName2 | ❌       | Information about the Postman team member.                               |

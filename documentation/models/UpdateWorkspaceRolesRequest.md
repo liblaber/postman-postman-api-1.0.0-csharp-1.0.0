@@ -4,7 +4,7 @@
 
 | Name  | Type                             | Required | Description |
 | :---- | :------------------------------- | :------- | :---------- |
-| Roles | List`<UpdateWorkspaceRolesRoles1>` | ❌       |             |
+| Roles | List<UpdateWorkspaceRolesRoles1> | ❌       |             |
 
 # UpdateWorkspaceRolesRoles1
 
@@ -14,7 +14,7 @@
 | :---- | :---------------- | :------- | :------------------------------------- |
 | Op    | string            | ✅       | The operation to perform on the path.  |
 | Path  | RolesPath2        | ✅       | The resource to perform the action on. |
-| Value | List`<RolesValue2>` | ✅       |                                        |
+| Value | List<RolesValue2> | ✅       |                                        |
 
 # RolesPath2
 

@@ -6,7 +6,7 @@ Information about the API schema.
 
 | Name | Type              | Required | Description                                            |
 | :--- | :---------------- | :------- | :----------------------------------------------------- |
-| Apis | List`<GetApisApis>` | ❌       |                                                        |
+| Apis | List<GetApisApis> | ❌       |                                                        |
 | Meta | GetApisMeta       | ❌       | The response's meta information for paginated results. |
 
 # GetApisApis

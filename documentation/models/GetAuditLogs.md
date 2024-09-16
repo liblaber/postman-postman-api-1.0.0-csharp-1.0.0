@@ -4,7 +4,7 @@
 
 | Name     | Type         | Required | Description |
 | :------- | :----------- | :------- | :---------- |
-| Trails\_ | List`<Trails>` | ❌       |             |
+| Trails\_ | List<Trails> | ❌       |             |
 
 # Trails
 
