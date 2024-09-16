@@ -2,10 +2,10 @@
 
 **Properties**
 
-| Name | Type                          | Required | Description                                            |
-| :--- | :---------------------------- | :------- | :----------------------------------------------------- |
+| Name | Type                            | Required | Description                                            |
+| :--- | :------------------------------ | :------- | :----------------------------------------------------- |
 | Data | List`<GetEnvironmentForksData>` | ❌       | A list of the environment's forks.                     |
-| Meta | GetEnvironmentForksMeta       | ❌       | The response's meta information for paginated results. |
+| Meta | GetEnvironmentForksMeta         | ❌       | The response's meta information for paginated results. |
 
 # GetEnvironmentForksData
 

@@ -4,10 +4,10 @@ Information about the API schema.
 
 **Properties**
 
-| Name | Type              | Required | Description                                            |
-| :--- | :---------------- | :------- | :----------------------------------------------------- |
+| Name | Type                | Required | Description                                            |
+| :--- | :------------------ | :------- | :----------------------------------------------------- |
 | Apis | List`<GetApisApis>` | ❌       |                                                        |
-| Meta | GetApisMeta       | ❌       | The response's meta information for paginated results. |
+| Meta | GetApisMeta         | ❌       | The response's meta information for paginated results. |
 
 # GetApisApis
 

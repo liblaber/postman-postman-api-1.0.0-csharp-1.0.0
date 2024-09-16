@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using PostmanClient.Http;
+using PostmanClient.Http.Exceptions;
+using PostmanClient.Http.Extensions;
 using PostmanClient.Http.Serialization;
 using PostmanClient.Models;
 
@@ -36,9 +38,9 @@ public class ApiSecurityService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<SchemaSecurityValidationOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken

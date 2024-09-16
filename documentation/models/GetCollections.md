@@ -2,8 +2,8 @@
 
 **Properties**
 
-| Name        | Type                            | Required | Description |
-| :---------- | :------------------------------ | :------- | :---------- |
+| Name        | Type                              | Required | Description |
+| :---------- | :-------------------------------- | :------- | :---------- |
 | Collections | List`<GetCollectionsCollections>` | ❌       |             |
 
 # GetCollectionsCollections

@@ -4,9 +4,9 @@ Information about the schema files and its meta information.
 
 **Properties**
 
-| Name  | Type                         | Required | Description                                 |
-| :---- | :--------------------------- | :------- | :------------------------------------------ |
-| Meta  | GetApiSchemaFilesMeta        | ❌       | The schema's non-standard meta information. |
+| Name  | Type                           | Required | Description                                 |
+| :---- | :----------------------------- | :------- | :------------------------------------------ |
+| Meta  | GetApiSchemaFilesMeta          | ❌       | The schema's non-standard meta information. |
 | Files | List`<GetApiSchemaFilesFiles>` | ❌       | The schema's files.                         |
 
 # GetApiSchemaFilesMeta

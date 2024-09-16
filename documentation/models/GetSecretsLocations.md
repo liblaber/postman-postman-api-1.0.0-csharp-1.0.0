@@ -2,10 +2,10 @@
 
 **Properties**
 
-| Name | Type                          | Required | Description |
-| :--- | :---------------------------- | :------- | :---------- |
+| Name | Type                            | Required | Description |
+| :--- | :------------------------------ | :------- | :---------- |
 | Data | List`<GetSecretsLocationsData>` | ❌       |             |
-| Meta | GetSecretsLocationsMeta       | ❌       |             |
+| Meta | GetSecretsLocationsMeta         | ❌       |             |
 
 # GetSecretsLocationsData
 
@@ -45,16 +45,16 @@ The type of resource in which the secret was detected.
 
 **Properties**
 
-| Name             | Type               | Required | Description                                                                 |
-| :--------------- | :----------------- | :------- | :-------------------------------------------------------------------------- |
+| Name             | Type                 | Required | Description                                                                 |
+| :--------------- | :------------------- | :------- | :-------------------------------------------------------------------------- |
 | ActivityFeed\_   | List`<ActivityFeed>` | ❌       | The history of the secret's resolution status changes.                      |
-| Cursor           | string             | ❌       | The pointer to the first record of the set of paginated results.            |
-| Limit            | long               | ❌       | The maximum number of rows to return in the response.                       |
-| NextCursor       | string             | ❌       | The Base64-encoded value that points to the next record in the results set. |
-| ObfuscatedSecret | string             | ❌       | The secret's obfuscated value.                                              |
-| SecretHash       | string             | ❌       | The secret's SHA-256 hash.                                                  |
-| SecretType       | string             | ❌       | The type of thesecret.                                                      |
-| Total            | long               | ❌       | The total number of discovered secret locations.                            |
+| Cursor           | string               | ❌       | The pointer to the first record of the set of paginated results.            |
+| Limit            | long                 | ❌       | The maximum number of rows to return in the response.                       |
+| NextCursor       | string               | ❌       | The Base64-encoded value that points to the next record in the results set. |
+| ObfuscatedSecret | string               | ❌       | The secret's obfuscated value.                                              |
+| SecretHash       | string               | ❌       | The secret's SHA-256 hash.                                                  |
+| SecretType       | string               | ❌       | The type of thesecret.                                                      |
+| Total            | long                 | ❌       | The total number of discovered secret locations.                            |
 
 # ActivityFeed
 

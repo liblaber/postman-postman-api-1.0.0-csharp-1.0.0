@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using PostmanClient.Http;
+using PostmanClient.Http.Exceptions;
+using PostmanClient.Http.Extensions;
 using PostmanClient.Http.Serialization;
 using PostmanClient.Models;
 
@@ -26,9 +28,9 @@ public class MonitorsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetMonitors>(_jsonSerializerOptions, cancellationToken)
                 .ConfigureAwait(false) ?? throw new Exception("Failed to deserialize response.");
     }
@@ -57,9 +59,9 @@ public class MonitorsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CreateMonitorOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -83,9 +85,9 @@ public class MonitorsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetMonitor>(_jsonSerializerOptions, cancellationToken)
                 .ConfigureAwait(false) ?? throw new Exception("Failed to deserialize response.");
     }
@@ -109,9 +111,9 @@ public class MonitorsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<UpdateMonitorOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -135,9 +137,9 @@ public class MonitorsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<DeleteMonitor>(_jsonSerializerOptions, cancellationToken)
                 .ConfigureAwait(false) ?? throw new Exception("Failed to deserialize response.");
     }
@@ -158,9 +160,9 @@ public class MonitorsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<RunMonitor>(_jsonSerializerOptions, cancellationToken)
                 .ConfigureAwait(false) ?? throw new Exception("Failed to deserialize response.");
     }

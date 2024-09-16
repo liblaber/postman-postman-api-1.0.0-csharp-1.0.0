@@ -2,20 +2,20 @@
 
 **Properties**
 
-| Name  | Type                             | Required | Description |
-| :---- | :------------------------------- | :------- | :---------- |
+| Name  | Type                               | Required | Description |
+| :---- | :--------------------------------- | :------- | :---------- |
 | Roles | List`<UpdateWorkspaceRolesRoles2>` | ❌       |             |
 
 # UpdateWorkspaceRolesRoles2
 
 **Properties**
 
-| Name          | Type         | Required | Description                                    |
-| :------------ | :----------- | :------- | :--------------------------------------------- |
-| Id            | long         | ❌       | The role's ID.                                 |
+| Name          | Type           | Required | Description                                    |
+| :------------ | :------------- | :------- | :--------------------------------------------- |
+| Id            | long           | ❌       | The role's ID.                                 |
 | User          | List`<double>` | ❌       | A list of user IDs assigned to the role.       |
 | Usergroup     | List`<double>` | ❌       | A list of user group IDs assigned to the role. |
-| DisplayName\_ | DisplayName  | ❌       | The role's display name.                       |
+| DisplayName\_ | DisplayName    | ❌       | The role's display name.                       |
 
 # DisplayName
 

@@ -200,11 +200,11 @@ Adds a collection to an API. To do this, use the following `operationType` value
 
 **Parameters**
 
-| Name   | Type                                                             | Required | Description                                                                     |
-| :----- | :--------------------------------------------------------------- | :------- | :------------------------------------------------------------------------------ |
-| input  | OneOf`<AddApiCollection1, AddApiCollection2, AddApiCollection3>` | ❌       | The request body.                                                               |
-| apiId  | string                                                           | ✅       | The API's ID.                                                                   |
-| accept | Accept                                                           | ✅       | The `application/vnd.api.v10+json` request header required to use the endpoint. |
+| Name   | Type                                                           | Required | Description                                                                     |
+| :----- | :------------------------------------------------------------- | :------- | :------------------------------------------------------------------------------ |
+| input  | OneOf<AddApiCollection1, AddApiCollection2, AddApiCollection3> | ❌       | The request body.                                                               |
+| apiId  | string                                                         | ✅       | The API's ID.                                                                   |
+| accept | Accept                                                         | ✅       | The `application/vnd.api.v10+json` request header required to use the endpoint. |
 
 **Return Type**
 
@@ -686,11 +686,11 @@ Creates a new API version asynchronously and immediately returns an HTTP `202 Ac
 
 **Parameters**
 
-| Name   | Type                                                             | Required | Description                                                                     |
-| :----- | :--------------------------------------------------------------- | :------- | :------------------------------------------------------------------------------ |
-| input  | OneOf`<CreateApiVersion1, CreateApiVersion2, CreateApiVersion3>` | ❌       | The request body.                                                               |
-| apiId  | string                                                           | ✅       | The API's ID.                                                                   |
-| accept | Accept                                                           | ✅       | The `application/vnd.api.v10+json` request header required to use the endpoint. |
+| Name   | Type                                                           | Required | Description                                                                     |
+| :----- | :------------------------------------------------------------- | :------- | :------------------------------------------------------------------------------ |
+| input  | OneOf<CreateApiVersion1, CreateApiVersion2, CreateApiVersion3> | ❌       | The request body.                                                               |
+| apiId  | string                                                         | ✅       | The API's ID.                                                                   |
+| accept | Accept                                                         | ✅       | The `application/vnd.api.v10+json` request header required to use the endpoint. |
 
 **Return Type**
 

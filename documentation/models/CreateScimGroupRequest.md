@@ -2,10 +2,10 @@
 
 **Properties**
 
-| Name        | Type                          | Required | Description                                                              |
-| :---------- | :---------------------------- | :------- | :----------------------------------------------------------------------- |
+| Name        | Type                            | Required | Description                                                              |
+| :---------- | :------------------------------ | :------- | :----------------------------------------------------------------------- |
 | Schemas     | List`<string>`                  | ❌       | The [SCIM schema URI](https://www.iana.org/assignments/scim/scim.xhtml). |
-| DisplayName | string                        | ❌       | The group's display name.                                                |
+| DisplayName | string                          | ❌       | The group's display name.                                                |
 | Members     | List`<CreateScimGroupMembers1>` | ❌       |                                                                          |
 
 # CreateScimGroupMembers1

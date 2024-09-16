@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using PostmanClient.Http;
+using PostmanClient.Http.Exceptions;
+using PostmanClient.Http.Extensions;
 using PostmanClient.Http.Serialization;
 using PostmanClient.Models;
 using PostmanClient.OneOf;
@@ -45,9 +47,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetApis>(_jsonSerializerOptions, cancellationToken)
                 .ConfigureAwait(false) ?? throw new Exception("Failed to deserialize response.");
     }
@@ -75,9 +77,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CreateApiOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -125,9 +127,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<OneOf<GetApi1, GetApi2>>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -158,9 +160,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<UpdateApiOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -188,7 +190,8 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
+
+        response.EnsureSuccessfulResponse();
     }
 
     /// <summary>
@@ -221,9 +224,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<AddApiCollectionOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -261,9 +264,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<AddApiCollectionOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -301,9 +304,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<AddApiCollectionOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -344,9 +347,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<object>(_jsonSerializerOptions, cancellationToken)
                 .ConfigureAwait(false) ?? throw new Exception("Failed to deserialize response.");
     }
@@ -386,9 +389,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<SyncCollectionWithSchema>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -412,9 +415,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CommentResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -447,9 +450,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CommentCreatedUpdated>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -485,9 +488,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CommentCreatedUpdated>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -520,7 +523,8 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
+
+        response.EnsureSuccessfulResponse();
     }
 
     /// <summary>Creates a schema for an API.</summary>
@@ -547,9 +551,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CreateApiSchemaOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -599,9 +603,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<OneOf<GetApiSchema1, GetApiSchema2>>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -648,9 +652,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetApiSchemaFiles>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -698,9 +702,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetApiSchemaFileContents>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -750,9 +754,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CreateUpdateApiSchemaFileOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -791,7 +795,8 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
+
+        response.EnsureSuccessfulResponse();
     }
 
     /// <summary>Gets the status of an asynchronous task.</summary>
@@ -818,9 +823,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetStatusOfAnAsyncTask>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -854,9 +859,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetApiVersions>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -891,9 +896,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CreateApiVersionAcceptedResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -928,9 +933,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CreateApiVersionAcceptedResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -965,9 +970,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CreateApiVersionAcceptedResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -1006,9 +1011,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetApiVersion>(_jsonSerializerOptions, cancellationToken)
                 .ConfigureAwait(false) ?? throw new Exception("Failed to deserialize response.");
     }
@@ -1046,9 +1051,9 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<UpdateApiVersionOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -1086,6 +1091,7 @@ public class ApiService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
+
+        response.EnsureSuccessfulResponse();
     }
 }

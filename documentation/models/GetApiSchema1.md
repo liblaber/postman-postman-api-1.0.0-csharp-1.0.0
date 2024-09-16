@@ -20,10 +20,10 @@ Information about the schema's files. The response is paginated and limited to o
 
 **Properties**
 
-| Name | Type            | Required | Description                 |
-| :--- | :-------------- | :------- | :-------------------------- |
+| Name | Type              | Required | Description                 |
+| :--- | :---------------- | :------- | :-------------------------- |
 | Data | List`<FilesData>` | ❌       | A list of the schema files. |
-| Meta | FilesMeta       | ❌       |                             |
+| Meta | FilesMeta         | ❌       |                             |
 
 # FilesData
 

@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using PostmanClient.Http;
+using PostmanClient.Http.Exceptions;
+using PostmanClient.Http.Extensions;
 using PostmanClient.Http.Serialization;
 using PostmanClient.Models;
 
@@ -36,9 +38,9 @@ public class ScimService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetScimGroupResources>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -67,9 +69,9 @@ public class ScimService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CreateScimGroupCreatedResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -93,9 +95,9 @@ public class ScimService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetScimGroupResource>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -127,9 +129,9 @@ public class ScimService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ScimUpdateGroupOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -159,7 +161,8 @@ public class ScimService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
+
+        response.EnsureSuccessfulResponse();
     }
 
     /// <summary>Gets all the resource types supported by Postman's SCIM API.</summary>
@@ -172,9 +175,9 @@ public class ScimService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<List<GetScimResourceTypes>>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -192,9 +195,9 @@ public class ScimService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetScimServiceProviderConfig>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -226,9 +229,9 @@ public class ScimService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetScimUserResources>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -257,9 +260,9 @@ public class ScimService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CreateScimUserCreatedResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -283,9 +286,9 @@ public class ScimService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetScimUserResourceOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -318,9 +321,9 @@ public class ScimService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetScimUserResourceOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -353,9 +356,9 @@ public class ScimService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetScimUserResourceOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken

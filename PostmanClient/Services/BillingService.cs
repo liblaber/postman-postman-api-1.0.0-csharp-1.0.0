@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using PostmanClient.Http;
+using PostmanClient.Http.Exceptions;
+using PostmanClient.Http.Extensions;
 using PostmanClient.Http.Serialization;
 using PostmanClient.Models;
 
@@ -22,9 +24,9 @@ public class BillingService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<InvoicesAccountInfo>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -52,9 +54,9 @@ public class BillingService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetAccountInvoices>(
                     _jsonSerializerOptions,
                     cancellationToken

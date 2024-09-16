@@ -2,10 +2,10 @@
 
 **Properties**
 
-| Name     | Type                                      | Required | Description                                                                |
-| :------- | :---------------------------------------- | :------- | :------------------------------------------------------------------------- |
+| Name     | Type                                        | Required | Description                                                                |
+| :------- | :------------------------------------------ | :------- | :------------------------------------------------------------------------- |
 | Requests | List`<GetAllPanAddElementRequestsRequests>` | ❌       | Information about the requests to add elements to the Private API Network. |
-| Meta     | GetAllPanAddElementRequestsMeta           | ❌       | The response's non-standard meta information.                              |
+| Meta     | GetAllPanAddElementRequestsMeta             | ❌       | The response's non-standard meta information.                              |
 
 # GetAllPanAddElementRequestsRequests
 

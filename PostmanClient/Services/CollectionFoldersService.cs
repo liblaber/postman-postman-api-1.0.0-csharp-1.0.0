@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using PostmanClient.Http;
+using PostmanClient.Http.Exceptions;
+using PostmanClient.Http.Extensions;
 using PostmanClient.Http.Serialization;
 using PostmanClient.Models;
 
@@ -35,9 +37,9 @@ public class CollectionFoldersService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CommentResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -77,9 +79,9 @@ public class CollectionFoldersService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CommentCreatedUpdated>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -122,9 +124,9 @@ public class CollectionFoldersService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CommentCreatedUpdated>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -164,6 +166,7 @@ public class CollectionFoldersService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
+
+        response.EnsureSuccessfulResponse();
     }
 }

@@ -34,10 +34,10 @@ public record UpdateMonitorRequest(
             ///
             /// | Frequency | Pattern |
             /// | --------- | ------- |
-            /// | Every 5 minutes | `*`/5 * * * *` |
-            /// | Every 30 minutes | `*`/30 * * * *` |
-            /// | Every hour | `0 *`/1 * * *` |
-            /// | Every 6 hours | `0 *`/6 * * *` |
+            /// | Every 5 minutes | `*/5 * * * *` |
+            /// | Every 30 minutes | `*/30 * * * *` |
+            /// | Every hour | `0 */1 * * *` |
+            /// | Every 6 hours | `0 */6 * * *` |
             /// | Every day at 5 pm | `0 17 * * *` |
             /// | Every Monday at 12 pm | `0 12 * * MON` |
             /// | Every weekday (Mon — Fri) at 6 am | `0 6 * * MON-FRI` |

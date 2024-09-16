@@ -2,6 +2,8 @@
 
 using System.Net.Http.Json;
 using PostmanClient.Http;
+using PostmanClient.Http.Exceptions;
+using PostmanClient.Http.Extensions;
 using PostmanClient.Http.Serialization;
 using PostmanClient.Models;
 
@@ -26,9 +28,9 @@ public class EnvironmentsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetEnvironments>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -54,9 +56,9 @@ public class EnvironmentsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<CreateEnvironmentOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -80,9 +82,9 @@ public class EnvironmentsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetEnvironment>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -109,9 +111,9 @@ public class EnvironmentsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<UpdateEnvironmentOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -135,9 +137,9 @@ public class EnvironmentsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<DeleteEnvironment>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -173,9 +175,9 @@ public class EnvironmentsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<GetEnvironmentForks>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -206,9 +208,9 @@ public class EnvironmentsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<ForkEnvironmentOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -237,9 +239,9 @@ public class EnvironmentsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<MergeEnvironmentForkOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken
@@ -268,9 +270,9 @@ public class EnvironmentsService : BaseService
         var response = await _httpClient
             .SendAsync(request, cancellationToken)
             .ConfigureAwait(false);
-        response.EnsureSuccessStatusCode();
 
         return await response
+                .EnsureSuccessfulResponse()
                 .Content.ReadFromJsonAsync<PullEnvironmentOkResponse>(
                     _jsonSerializerOptions,
                     cancellationToken

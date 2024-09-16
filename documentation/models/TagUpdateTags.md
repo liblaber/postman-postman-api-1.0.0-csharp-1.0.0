@@ -2,8 +2,8 @@
 
 **Properties**
 
-| Name | Type                    | Required | Description                             |
-| :--- | :---------------------- | :------- | :-------------------------------------- |
+| Name | Type                      | Required | Description                             |
+| :--- | :------------------------ | :------- | :-------------------------------------- |
 | Tags | List`<TagUpdateTagsTags>` | ✅       | A list of the associated tags as slugs. |
 
 # TagUpdateTagsTags

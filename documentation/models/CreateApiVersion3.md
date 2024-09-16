@@ -4,13 +4,13 @@ Information about the API version.
 
 **Properties**
 
-| Name         | Type                               | Required | Description                                                              |
-| :----------- | :--------------------------------- | :------- | :----------------------------------------------------------------------- |
-| Name         | string                             | ✅       | The version's name.                                                      |
-| Branch       | string                             | ✅       | The branch ID.                                                           |
+| Name         | Type                                 | Required | Description                                                              |
+| :----------- | :----------------------------------- | :------- | :----------------------------------------------------------------------- |
+| Name         | string                               | ✅       | The version's name.                                                      |
+| Branch       | string                               | ✅       | The branch ID.                                                           |
 | Schemas      | List`<CreateApiVersion3Schemas>`     | ✅       | A list of the version's schemas.                                         |
 | Collections  | List`<CreateApiVersion3Collections>` | ✅       | A list of the version's collections.                                     |
-| ReleaseNotes | string                             | ❌       | Information about the API version release. For example, changelog notes. |
+| ReleaseNotes | string                               | ❌       | Information about the API version release. For example, changelog notes. |
 
 # CreateApiVersion3Schemas
 

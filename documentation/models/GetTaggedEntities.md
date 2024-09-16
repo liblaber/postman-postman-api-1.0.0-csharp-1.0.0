@@ -13,8 +13,8 @@ An object containing the paginated elements.
 
 **Properties**
 
-| Name       | Type           | Required | Description                                                |
-| :--------- | :------------- | :------- | :--------------------------------------------------------- |
+| Name       | Type             | Required | Description                                                |
+| :--------- | :--------------- | :------- | :--------------------------------------------------------- |
 | Entities\_ | List`<Entities>` | ✅       | A list of the Postman elements that contain the given tag. |
 
 # Entities

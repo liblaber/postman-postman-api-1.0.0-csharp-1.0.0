@@ -21,8 +21,8 @@ The collection's updated environments.
 
 **Properties**
 
-| Name   | Type         | Required | Description |
-| :----- | :----------- | :------- | :---------- |
+| Name   | Type           | Required | Description |
+| :----- | :------------- | :------- | :---------- |
 | Add    | List`<string>` | ❌       |             |
 | Remove | List`<string>` | ❌       |             |
 

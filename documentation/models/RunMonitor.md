@@ -12,10 +12,10 @@ Information about the monitor run.
 
 **Properties**
 
-| Name         | Type             | Required | Description                                                      |
-| :----------- | :--------------- | :------- | :--------------------------------------------------------------- |
-| Info         | RunInfo          | ❌       | Information about the monitor.                                   |
-| Stats        | RunStats         | ❌       | Information about the monitor run's stats.                       |
+| Name         | Type               | Required | Description                                                      |
+| :----------- | :----------------- | :------- | :--------------------------------------------------------------- |
+| Info         | RunInfo            | ❌       | Information about the monitor.                                   |
+| Stats        | RunStats           | ❌       | Information about the monitor run's stats.                       |
 | Executions\_ | List`<Executions>` | ❌       | Information about the monitor run's executions.                  |
 | Failures     | List`<object>`     | ❌       | If the monitor run failed, information about the run's failures. |
 

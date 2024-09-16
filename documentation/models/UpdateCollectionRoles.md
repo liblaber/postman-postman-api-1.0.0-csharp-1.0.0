@@ -2,18 +2,18 @@
 
 **Properties**
 
-| Name  | Type                             | Required | Description |
-| :---- | :------------------------------- | :------- | :---------- |
+| Name  | Type                               | Required | Description |
+| :---- | :--------------------------------- | :------- | :---------- |
 | Roles | List`<UpdateCollectionRolesRoles>` | ✅       |             |
 
 # UpdateCollectionRolesRoles
 
 **Properties**
 
-| Name  | Type              | Required | Description                            |
-| :---- | :---------------- | :------- | :------------------------------------- |
-| Op    | RolesOp           | ✅       | The operation to perform on the path.  |
-| Path  | RolesPath1        | ✅       | The resource to perform the action on. |
+| Name  | Type                | Required | Description                            |
+| :---- | :------------------ | :------- | :------------------------------------- |
+| Op    | RolesOp             | ✅       | The operation to perform on the path.  |
+| Path  | RolesPath1          | ✅       | The resource to perform the action on. |
 | Value | List`<RolesValue1>` | ✅       |                                        |
 
 # RolesOp

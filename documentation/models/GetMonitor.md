@@ -18,7 +18,7 @@
 | Owner           | double           | ❌       | The ID of monitor's owner.                                                                                                              |
 | CollectionUid   | string           | ❌       | The unique ID of the monitor's associated collection.                                                                                   |
 | EnvironmentUid  | string           | ❌       | The unique ID of the monitor's associated environment.                                                                                  |
-| Distribution    | List`<string>`     | ❌       | A list of the monitor's [geographic regions](https://learning.postman.com/docs/monitoring-your-api/setting-up-monitor/#adding-regions). |
+| Distribution    | List`<string>`   | ❌       | A list of the monitor's [geographic regions](https://learning.postman.com/docs/monitoring-your-api/setting-up-monitor/#adding-regions). |
 | LastRun\_       | LastRun          | ❌       | Information about the monitor's previous run.                                                                                           |
 | Notifications\_ | Notifications    | ❌       | Information about the monitor's notification settings.                                                                                  |
 | Options\_       | Options          | ❌       | Information about the monitor's option settings.                                                                                        |
@@ -75,8 +75,8 @@ Information about the monitor's notification settings.
 
 **Properties**
 
-| Name        | Type            | Required | Description |
-| :---------- | :-------------- | :------- | :---------- |
+| Name        | Type              | Required | Description |
+| :---------- | :---------------- | :------- | :---------- |
 | OnError\_   | List`<OnError>`   | ❌       |             |
 | OnFailure\_ | List`<OnFailure>` | ❌       |             |
 
