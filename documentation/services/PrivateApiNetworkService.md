@@ -64,7 +64,7 @@ Publishes a element or creates a folder in your [Private API Network](https://le
 
 | Name  | Type                                                                          | Required | Description       |
 | :---- | :---------------------------------------------------------------------------- | :------- | :---------------- |
-| input | OneOf<PanCreateApi, PanCreateCollection, PanCreateWorkspace, PanCreateFolder> | ✅       | The request body. |
+| input | OneOf`<PanCreateApi, PanCreateCollection, PanCreateWorkspace, PanCreateFolder>` | ✅       | The request body. |
 
 **Return Type**
 
