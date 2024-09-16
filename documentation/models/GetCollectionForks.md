@@ -2,10 +2,10 @@
 
 **Properties**
 
-| Name | Type                         | Required | Description                                            |
-| :--- | :--------------------------- | :------- | :----------------------------------------------------- |
-| Data | List<GetCollectionForksData> | ❌       | A list of the collection's forks.                      |
-| Meta | GetCollectionForksMeta       | ❌       | The response's meta information for paginated results. |
+| Name | Type                           | Required | Description                                            |
+| :--- | :----------------------------- | :------- | :----------------------------------------------------- |
+| Data | List`<GetCollectionForksData>` | ❌       | A list of the collection's forks.                      |
+| Meta | GetCollectionForksMeta         | ❌       | The response's meta information for paginated results. |
 
 # GetCollectionForksData
 

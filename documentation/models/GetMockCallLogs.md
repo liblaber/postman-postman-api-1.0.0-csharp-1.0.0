@@ -4,7 +4,7 @@
 
 | Name       | Type                | Required | Description                                   |
 | :--------- | :------------------ | :------- | :-------------------------------------------- |
-| CallLogs\_ | List<CallLogs>      | ❌       |                                               |
+| CallLogs\_ | List`<CallLogs>`    | ❌       |                                               |
 | Meta       | GetMockCallLogsMeta | ❌       | The response's non-standard meta information. |
 
 # CallLogs

@@ -2,9 +2,9 @@
 
 **Properties**
 
-| Name | Type                | Required | Description                |
-| :--- | :------------------ | :------- | :------------------------- |
-| Tags | List<TagGetPutTags> | ❌       | A list of associated tags. |
+| Name | Type                  | Required | Description                |
+| :--- | :-------------------- | :------- | :------------------------- |
+| Tags | List`<TagGetPutTags>` | ❌       | A list of associated tags. |
 
 # TagGetPutTags
 

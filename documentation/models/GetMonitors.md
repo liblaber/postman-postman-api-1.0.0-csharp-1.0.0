@@ -2,9 +2,9 @@
 
 **Properties**
 
-| Name     | Type                      | Required | Description |
-| :------- | :------------------------ | :------- | :---------- |
-| Monitors | List<GetMonitorsMonitors> | ❌       |             |
+| Name     | Type                        | Required | Description |
+| :------- | :-------------------------- | :------- | :---------- |
+| Monitors | List`<GetMonitorsMonitors>` | ❌       |             |
 
 # GetMonitorsMonitors
 

@@ -2,9 +2,9 @@
 
 **Properties**
 
-| Name         | Type             | Required | Description |
-| :----------- | :--------------- | :------- | :---------- |
-| Workspaces\_ | List<Workspaces> | ❌       |             |
+| Name         | Type               | Required | Description |
+| :----------- | :----------------- | :------- | :---------- |
+| Workspaces\_ | List`<Workspaces>` | ❌       |             |
 
 # Workspaces
 

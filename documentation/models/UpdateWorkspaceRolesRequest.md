@@ -2,19 +2,19 @@
 
 **Properties**
 
-| Name  | Type                             | Required | Description |
-| :---- | :------------------------------- | :------- | :---------- |
-| Roles | List<UpdateWorkspaceRolesRoles1> | ❌       |             |
+| Name  | Type                               | Required | Description |
+| :---- | :--------------------------------- | :------- | :---------- |
+| Roles | List`<UpdateWorkspaceRolesRoles1>` | ❌       |             |
 
 # UpdateWorkspaceRolesRoles1
 
 **Properties**
 
-| Name  | Type              | Required | Description                            |
-| :---- | :---------------- | :------- | :------------------------------------- |
-| Op    | string            | ✅       | The operation to perform on the path.  |
-| Path  | RolesPath2        | ✅       | The resource to perform the action on. |
-| Value | List<RolesValue2> | ✅       |                                        |
+| Name  | Type                | Required | Description                            |
+| :---- | :------------------ | :------- | :------------------------------------- |
+| Op    | string              | ✅       | The operation to perform on the path.  |
+| Path  | RolesPath2          | ✅       | The resource to perform the action on. |
+| Value | List`<RolesValue2>` | ✅       |                                        |
 
 # RolesPath2
 

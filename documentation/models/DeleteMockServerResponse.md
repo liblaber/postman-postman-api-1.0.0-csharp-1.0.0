@@ -4,17 +4,17 @@ Information about the deleted server response.
 
 **Properties**
 
-| Name       | Type                                  | Required | Description                                                                                           |
-| :--------- | :------------------------------------ | :------- | :---------------------------------------------------------------------------------------------------- |
-| Id         | string                                | ❌       | The server response's ID.                                                                             |
-| Name       | string                                | ❌       | The server response's name.                                                                           |
-| StatusCode | double                                | ❌       | The server response's 5xx HTTP response code.                                                         |
-| Headers    | List<DeleteMockServerResponseHeaders> | ❌       | The server response's request headers, such as Content-Type, Accept, encoding, and other information. |
-| Language   | DeleteMockServerResponseLanguage      | ❌       | The server response's body language type.                                                             |
-| Body       | string                                | ❌       | The server response's body that returns when calling the mock server.                                 |
-| CreatedBy  | string                                | ❌       | The user ID of the user who created the server response.                                              |
-| UpdatedBy  | string                                | ❌       | The user ID of the user who last updated the server response.                                         |
-| CreatedAt  | string                                | ❌       | The date and time at which the server response was created.                                           |
+| Name       | Type                                    | Required | Description                                                                                           |
+| :--------- | :-------------------------------------- | :------- | :---------------------------------------------------------------------------------------------------- |
+| Id         | string                                  | ❌       | The server response's ID.                                                                             |
+| Name       | string                                  | ❌       | The server response's name.                                                                           |
+| StatusCode | double                                  | ❌       | The server response's 5xx HTTP response code.                                                         |
+| Headers    | List`<DeleteMockServerResponseHeaders>` | ❌       | The server response's request headers, such as Content-Type, Accept, encoding, and other information. |
+| Language   | DeleteMockServerResponseLanguage        | ❌       | The server response's body language type.                                                             |
+| Body       | string                                  | ❌       | The server response's body that returns when calling the mock server.                                 |
+| CreatedBy  | string                                  | ❌       | The user ID of the user who created the server response.                                              |
+| UpdatedBy  | string                                  | ❌       | The user ID of the user who last updated the server response.                                         |
+| CreatedAt  | string                                  | ❌       | The date and time at which the server response was created.                                           |
 
 # DeleteMockServerResponseHeaders
 

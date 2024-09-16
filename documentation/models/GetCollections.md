@@ -2,9 +2,9 @@
 
 **Properties**
 
-| Name        | Type                            | Required | Description |
-| :---------- | :------------------------------ | :------- | :---------- |
-| Collections | List<GetCollectionsCollections> | ❌       |             |
+| Name        | Type                              | Required | Description |
+| :---------- | :-------------------------------- | :------- | :---------- |
+| Collections | List`<GetCollectionsCollections>` | ❌       |             |
 
 # GetCollectionsCollections
 

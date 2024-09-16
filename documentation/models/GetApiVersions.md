@@ -4,10 +4,10 @@ Information about the API's versions.
 
 **Properties**
 
-| Name     | Type                         | Required | Description                                            |
-| :------- | :--------------------------- | :------- | :----------------------------------------------------- |
-| Meta     | GetApiVersionsMeta           | ❌       | The response's meta information for paginated results. |
-| Versions | List<GetApiVersionsVersions> | ❌       |                                                        |
+| Name     | Type                           | Required | Description                                            |
+| :------- | :----------------------------- | :------- | :----------------------------------------------------- |
+| Meta     | GetApiVersionsMeta             | ❌       | The response's meta information for paginated results. |
+| Versions | List`<GetApiVersionsVersions>` | ❌       |                                                        |
 
 # GetApiVersionsMeta
 

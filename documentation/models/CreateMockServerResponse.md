@@ -10,13 +10,13 @@
 
 **Properties**
 
-| Name       | Type                         | Required | Description                                                                                           |
-| :--------- | :--------------------------- | :------- | :---------------------------------------------------------------------------------------------------- |
-| Name       | string                       | ✅       | The server response's name.                                                                           |
-| StatusCode | long                         | ✅       | The server response's 5xx HTTP response code. This property only accepts 5xx values.                  |
-| Headers    | List<ServerResponseHeaders1> | ❌       | The server response's request headers, such as Content-Type, Accept, encoding, and other information. |
-| Language   | ServerResponseLanguage1      | ❌       | The server response's body language type.                                                             |
-| Body       | string                       | ❌       | The server response's body that returns when calling the mock server.                                 |
+| Name       | Type                           | Required | Description                                                                                           |
+| :--------- | :----------------------------- | :------- | :---------------------------------------------------------------------------------------------------- |
+| Name       | string                         | ✅       | The server response's name.                                                                           |
+| StatusCode | long                           | ✅       | The server response's 5xx HTTP response code. This property only accepts 5xx values.                  |
+| Headers    | List`<ServerResponseHeaders1>` | ❌       | The server response's request headers, such as Content-Type, Accept, encoding, and other information. |
+| Language   | ServerResponseLanguage1        | ❌       | The server response's body language type.                                                             |
+| Body       | string                         | ❌       | The server response's body that returns when calling the mock server.                                 |
 
 # ServerResponseHeaders1
 

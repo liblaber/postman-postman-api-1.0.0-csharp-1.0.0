@@ -2,14 +2,14 @@
 
 **Properties**
 
-| Name        | Type                          | Required | Description                                                              |
-| :---------- | :---------------------------- | :------- | :----------------------------------------------------------------------- |
-| Schemas     | List<string>                  | ❌       | The [SCIM schema URI](https://www.iana.org/assignments/scim/scim.xhtml). |
-| Id          | string                        | ❌       | The group's SCIM ID.                                                     |
-| DisplayName | string                        | ❌       | The group's display name.                                                |
-| ExternalId  | string                        | ❌       | The group's external ID.                                                 |
-| Members     | List<CreateScimGroupMembers2> | ❌       |                                                                          |
-| Meta        | CreateScimGroupMeta           | ❌       | The response's non-standard meta information.                            |
+| Name        | Type                            | Required | Description                                                              |
+| :---------- | :------------------------------ | :------- | :----------------------------------------------------------------------- |
+| Schemas     | List`<string>`                  | ❌       | The [SCIM schema URI](https://www.iana.org/assignments/scim/scim.xhtml). |
+| Id          | string                          | ❌       | The group's SCIM ID.                                                     |
+| DisplayName | string                          | ❌       | The group's display name.                                                |
+| ExternalId  | string                          | ❌       | The group's external ID.                                                 |
+| Members     | List`<CreateScimGroupMembers2>` | ❌       |                                                                          |
+| Meta        | CreateScimGroupMeta             | ❌       | The response's non-standard meta information.                            |
 
 # CreateScimGroupMembers2
 

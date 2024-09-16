@@ -2,20 +2,20 @@
 
 **Properties**
 
-| Name        | Type                     | Required | Description                                             |
-| :---------- | :----------------------- | :------- | :------------------------------------------------------ |
-| Id          | string                   | ❌       | The API's ID.                                           |
-| Name        | string                   | ❌       | The API's name.                                         |
-| Summary     | string                   | ❌       | The API's short summary.                                |
-| CreatedAt   | string                   | ❌       | The date and time at which the API was created.         |
-| CreatedBy   | long                     | ❌       | The Postman ID of the user that created the API.        |
-| UpdatedAt   | string                   | ❌       | The date and time at which the API was updated.         |
-| UpdatedBy   | long                     | ❌       | The Postman ID of the user that updated the API.        |
-| Description | string                   | ❌       | The API's description.                                  |
-| GitInfo\_   | GitInfo                  | ❌       | Information about the API's Git repository integration. |
-| Schemas     | List<GetApi2Schemas>     | ❌       | The API's schemas.                                      |
-| Versions    | List<GetApi2Versions>    | ❌       | The API's versions.                                     |
-| Collections | List<GetApi2Collections> | ❌       | The API's collections.                                  |
+| Name        | Type                       | Required | Description                                             |
+| :---------- | :------------------------- | :------- | :------------------------------------------------------ |
+| Id          | string                     | ❌       | The API's ID.                                           |
+| Name        | string                     | ❌       | The API's name.                                         |
+| Summary     | string                     | ❌       | The API's short summary.                                |
+| CreatedAt   | string                     | ❌       | The date and time at which the API was created.         |
+| CreatedBy   | long                       | ❌       | The Postman ID of the user that created the API.        |
+| UpdatedAt   | string                     | ❌       | The date and time at which the API was updated.         |
+| UpdatedBy   | long                       | ❌       | The Postman ID of the user that updated the API.        |
+| Description | string                     | ❌       | The API's description.                                  |
+| GitInfo\_   | GitInfo                    | ❌       | Information about the API's Git repository integration. |
+| Schemas     | List`<GetApi2Schemas>`     | ❌       | The API's schemas.                                      |
+| Versions    | List`<GetApi2Versions>`    | ❌       | The API's versions.                                     |
+| Collections | List`<GetApi2Collections>` | ❌       | The API's collections.                                  |
 
 # GitInfo
 

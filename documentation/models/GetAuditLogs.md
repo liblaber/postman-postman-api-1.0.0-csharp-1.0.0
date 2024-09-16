@@ -2,9 +2,9 @@
 
 **Properties**
 
-| Name     | Type         | Required | Description |
-| :------- | :----------- | :------- | :---------- |
-| Trails\_ | List<Trails> | ❌       |             |
+| Name     | Type           | Required | Description |
+| :------- | :------------- | :------- | :---------- |
+| Trails\_ | List`<Trails>` | ❌       |             |
 
 # Trails
 

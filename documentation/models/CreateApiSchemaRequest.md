@@ -4,10 +4,10 @@ Information about the API schema.
 
 **Properties**
 
-| Name   | Type                        | Required | Description                                    |
-| :----- | :-------------------------- | :------- | :--------------------------------------------- |
-| Type\_ | CreateApiSchemaType1        | ✅       | The schema's type.                             |
-| Files  | List<CreateApiSchemaFiles1> | ✅       | The list of files that are part of the schema. |
+| Name   | Type                          | Required | Description                                    |
+| :----- | :---------------------------- | :------- | :--------------------------------------------- |
+| Type\_ | CreateApiSchemaType1          | ✅       | The schema's type.                             |
+| Files  | List`<CreateApiSchemaFiles1>` | ✅       | The list of files that are part of the schema. |
 
 # CreateApiSchemaType1
 

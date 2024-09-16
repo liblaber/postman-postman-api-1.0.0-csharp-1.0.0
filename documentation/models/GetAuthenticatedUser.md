@@ -2,10 +2,10 @@
 
 **Properties**
 
-| Name       | Type                                 | Required | Description                                                                                                                                                                                                     |
-| :--------- | :----------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| User       | GetAuthenticatedUserUser             | ❌       | Information about the authenticated user.                                                                                                                                                                       |
-| Operations | List<GetAuthenticatedUserOperations> | ❌       | Information about operations and their usage limits. This object does not return for users with the [Guest role](https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#team-roles). |
+| Name       | Type                                   | Required | Description                                                                                                                                                                                                     |
+| :--------- | :------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| User       | GetAuthenticatedUserUser               | ❌       | Information about the authenticated user.                                                                                                                                                                       |
+| Operations | List`<GetAuthenticatedUserOperations>` | ❌       | Information about operations and their usage limits. This object does not return for users with the [Guest role](https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#team-roles). |
 
 # GetAuthenticatedUserUser
 
@@ -13,18 +13,18 @@ Information about the authenticated user.
 
 **Properties**
 
-| Name       | Type         | Required | Description                                                                                                                          |
-| :--------- | :----------- | :------- | :----------------------------------------------------------------------------------------------------------------------------------- |
-| Id         | double       | ❌       | The user's Postman ID.                                                                                                               |
-| Username   | string       | ❌       | The user's username.                                                                                                                 |
-| Email      | string       | ❌       | The user's email address.                                                                                                            |
-| FullName   | string       | ❌       | The user's full name.                                                                                                                |
-| Avatar     | string       | ❌       | The user's avatar image URL.                                                                                                         |
-| IsPublic   | bool         | ❌       | If true, the user's information is public and visible to all users.                                                                  |
-| TeamId     | long         | ❌       | The team ID the user is assigned to. This returns a `0` value if the user is not assigned to a team.                                 |
-| TeamName   | string       | ❌       | The name of the team the user is assigned to.                                                                                        |
-| TeamDomain | string       | ❌       | The team's Postman domain ID.                                                                                                        |
-| Roles      | List<string> | ❌       | A list of the user's assigned [roles](https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#team-roles). |
+| Name       | Type           | Required | Description                                                                                                                          |
+| :--------- | :------------- | :------- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| Id         | double         | ❌       | The user's Postman ID.                                                                                                               |
+| Username   | string         | ❌       | The user's username.                                                                                                                 |
+| Email      | string         | ❌       | The user's email address.                                                                                                            |
+| FullName   | string         | ❌       | The user's full name.                                                                                                                |
+| Avatar     | string         | ❌       | The user's avatar image URL.                                                                                                         |
+| IsPublic   | bool           | ❌       | If true, the user's information is public and visible to all users.                                                                  |
+| TeamId     | long           | ❌       | The team ID the user is assigned to. This returns a `0` value if the user is not assigned to a team.                                 |
+| TeamName   | string         | ❌       | The name of the team the user is assigned to.                                                                                        |
+| TeamDomain | string         | ❌       | The team's Postman domain ID.                                                                                                        |
+| Roles      | List`<string>` | ❌       | A list of the user's assigned [roles](https://learning.postman.com/docs/collaborating-in-postman/roles-and-permissions/#team-roles). |
 
 # GetAuthenticatedUserOperations
 

@@ -10,10 +10,10 @@
 
 **Properties**
 
-| Name   | Type                     | Required | Description                                    |
-| :----- | :----------------------- | :------- | :--------------------------------------------- |
-| Name   | string                   | ❌       | The environment's name.                        |
-| Values | List<EnvironmentValues3> | ❌       | Information about the environment's variables. |
+| Name   | Type                       | Required | Description                                    |
+| :----- | :------------------------- | :------- | :--------------------------------------------- |
+| Name   | string                     | ❌       | The environment's name.                        |
+| Values | List`<EnvironmentValues3>` | ❌       | Information about the environment's variables. |
 
 # EnvironmentValues3
 

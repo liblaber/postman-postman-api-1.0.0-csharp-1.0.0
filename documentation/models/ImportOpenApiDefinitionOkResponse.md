@@ -2,9 +2,9 @@
 
 **Properties**
 
-| Name        | Type                                     | Required | Description |
-| :---------- | :--------------------------------------- | :------- | :---------- |
-| Collections | List<ImportOpenApiDefinitionCollections> | ❌       |             |
+| Name        | Type                                       | Required | Description |
+| :---------- | :----------------------------------------- | :------- | :---------- |
+| Collections | List`<ImportOpenApiDefinitionCollections>` | ❌       |             |
 
 # ImportOpenApiDefinitionCollections
 

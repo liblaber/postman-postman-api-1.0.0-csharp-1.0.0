@@ -2,10 +2,10 @@
 
 **Properties**
 
-| Name | Type                                 | Required | Description                                            |
-| :--- | :----------------------------------- | :------- | :----------------------------------------------------- |
-| Data | List<GetCollectionsForkedByUserData> | ❌       | A list of the user's forked collections.               |
-| Meta | GetCollectionsForkedByUserMeta       | ❌       | The response's meta information for paginated results. |
+| Name | Type                                   | Required | Description                                            |
+| :--- | :------------------------------------- | :------- | :----------------------------------------------------- |
+| Data | List`<GetCollectionsForkedByUserData>` | ❌       | A list of the user's forked collections.               |
+| Meta | GetCollectionsForkedByUserMeta         | ❌       | The response's meta information for paginated results. |
 
 # GetCollectionsForkedByUserData
 

@@ -2,9 +2,9 @@
 
 **Properties**
 
-| Name | Type                      | Required | Description |
-| :--- | :------------------------ | :------- | :---------- |
-| Data | List<CommentResponseData> | ❌       |             |
+| Name | Type                        | Required | Description |
+| :--- | :-------------------------- | :------- | :---------- |
+| Data | List`<CommentResponseData>` | ❌       |             |
 
 # CommentResponseData
 

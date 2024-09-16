@@ -4,11 +4,11 @@
 
 | Name       | Type                | Required | Description                                                                       |
 | :--------- | :------------------ | :------- | :-------------------------------------------------------------------------------- |
-| Schemas    | List<string>        | ❌       | The [SCIM schema URI](https://www.iana.org/assignments/scim/scim.xhtml).          |
+| Schemas    | List`<string>`      | ❌       | The [SCIM schema URI](https://www.iana.org/assignments/scim/scim.xhtml).          |
 | UserName   | string              | ❌       | The user's username.                                                              |
 | Active     | bool                | ❌       | If true, activates the user. This lets them authenticate in to your Postman team. |
 | ExternalId | string              | ❌       | The user's external ID.                                                           |
-| Groups     | List<string>        | ❌       | A list of groups to assign the user to.                                           |
+| Groups     | List`<string>`      | ❌       | A list of groups to assign the user to.                                           |
 | Locale     | string              | ❌       | The user's [IETF language tag](https://datatracker.ietf.org/doc/html/rfc5646).    |
 | Name       | CreateScimUserName1 | ❌       | Information about the user's name.                                                |
 

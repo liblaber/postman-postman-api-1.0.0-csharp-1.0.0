@@ -2,9 +2,9 @@
 
 **Properties**
 
-| Name         | Type                              | Required | Description |
-| :----------- | :-------------------------------- | :------- | :---------- |
-| Environments | List<GetEnvironmentsEnvironments> | ❌       |             |
+| Name         | Type                                | Required | Description |
+| :----------- | :---------------------------------- | :------- | :---------- |
+| Environments | List`<GetEnvironmentsEnvironments>` | ❌       |             |
 
 # GetEnvironmentsEnvironments
 

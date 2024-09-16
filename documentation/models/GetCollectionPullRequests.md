@@ -2,9 +2,9 @@
 
 **Properties**
 
-| Name | Type                                | Required | Description |
-| :--- | :---------------------------------- | :------- | :---------- |
-| Data | List<GetCollectionPullRequestsData> | ❌       |             |
+| Name | Type                                  | Required | Description |
+| :--- | :------------------------------------ | :------- | :---------- |
+| Data | List`<GetCollectionPullRequestsData>` | ❌       |             |
 
 # GetCollectionPullRequestsData
 

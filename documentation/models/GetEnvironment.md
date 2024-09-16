@@ -10,15 +10,15 @@
 
 **Properties**
 
-| Name      | Type                     | Required | Description                                                  |
-| :-------- | :----------------------- | :------- | :----------------------------------------------------------- |
-| Id        | string                   | ❌       | The environment's ID.                                        |
-| Name      | string                   | ❌       | The environment's name.                                      |
-| Owner     | string                   | ❌       | The ID of environment's owner.                               |
-| CreatedAt | string                   | ❌       | The date and time at which the environment was created.      |
-| UpdatedAt | string                   | ❌       | The date and time at which the environment was last updated. |
-| Values    | List<EnvironmentValues2> | ❌       | Information about the environment's variables.               |
-| IsPublic  | bool                     | ❌       | If true, the environment is public and visible to all users. |
+| Name      | Type                       | Required | Description                                                  |
+| :-------- | :------------------------- | :------- | :----------------------------------------------------------- |
+| Id        | string                     | ❌       | The environment's ID.                                        |
+| Name      | string                     | ❌       | The environment's name.                                      |
+| Owner     | string                     | ❌       | The ID of environment's owner.                               |
+| CreatedAt | string                     | ❌       | The date and time at which the environment was created.      |
+| UpdatedAt | string                     | ❌       | The date and time at which the environment was last updated. |
+| Values    | List`<EnvironmentValues2>` | ❌       | Information about the environment's variables.               |
+| IsPublic  | bool                       | ❌       | If true, the environment is public and visible to all users. |
 
 # EnvironmentValues2
 

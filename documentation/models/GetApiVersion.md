@@ -12,15 +12,15 @@ Information about the API version.
 
 **Properties**
 
-| Name         | Type                     | Required | Description                                              |
-| :----------- | :----------------------- | :------- | :------------------------------------------------------- |
-| Id           | string                   | ❌       | The version's ID.                                        |
-| Name         | string                   | ❌       | The version's name.                                      |
-| CreatedAt    | string                   | ❌       | The date and time at which the version was created.      |
-| UpdatedAt    | string                   | ❌       | The date and time at which the version was last updated. |
-| ReleaseNotes | string                   | ❌       | The version's release notes.                             |
-| Schemas      | List<VersionSchemas>     | ❌       |                                                          |
-| Collections  | List<VersionCollections> | ❌       |                                                          |
+| Name         | Type                       | Required | Description                                              |
+| :----------- | :------------------------- | :------- | :------------------------------------------------------- |
+| Id           | string                     | ❌       | The version's ID.                                        |
+| Name         | string                     | ❌       | The version's name.                                      |
+| CreatedAt    | string                     | ❌       | The date and time at which the version was created.      |
+| UpdatedAt    | string                     | ❌       | The date and time at which the version was last updated. |
+| ReleaseNotes | string                     | ❌       | The version's release notes.                             |
+| Schemas      | List`<VersionSchemas>`     | ❌       |                                                          |
+| Collections  | List`<VersionCollections>` | ❌       |                                                          |
 
 # VersionSchemas
 

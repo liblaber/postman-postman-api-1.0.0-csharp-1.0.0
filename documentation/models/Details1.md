@@ -4,9 +4,9 @@ Information about the task's resources.
 
 **Properties**
 
-| Name      | Type                    | Required | Description |
-| :-------- | :---------------------- | :------- | :---------- |
-| Resources | List<Details1Resources> | ❌       |             |
+| Name      | Type                      | Required | Description |
+| :-------- | :------------------------ | :------- | :---------- |
+| Resources | List`<Details1Resources>` | ❌       |             |
 
 # Details1Resources
 

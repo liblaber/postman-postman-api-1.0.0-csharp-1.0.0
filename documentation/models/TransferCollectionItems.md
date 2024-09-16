@@ -2,12 +2,12 @@
 
 **Properties**
 
-| Name       | Type         | Required | Description                                                                                                                                                                                           |
-| :--------- | :----------- | :------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Ids        | List<string> | ✅       | A list of collection request, response, or folder UIDs to transfer.                                                                                                                                   |
-| Mode\_     | Mode         | ✅       | The transfer operation to perform.                                                                                                                                                                    |
-| Target\_   | Target       | ✅       | Information about the item transfer's destination location.                                                                                                                                           |
-| Location\_ | Location     | ✅       | The transferred items' placement in the target destination: - For `start` or `end` — Do not include the `model` and `id` values. - For `before` or `after` — Include the `model` and `id` properties. |
+| Name       | Type           | Required | Description                                                                                                                                                                                           |
+| :--------- | :------------- | :------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ids        | List`<string>` | ✅       | A list of collection request, response, or folder UIDs to transfer.                                                                                                                                   |
+| Mode\_     | Mode           | ✅       | The transfer operation to perform.                                                                                                                                                                    |
+| Target\_   | Target         | ✅       | Information about the item transfer's destination location.                                                                                                                                           |
+| Location\_ | Location       | ✅       | The transferred items' placement in the target destination: - For `start` or `end` — Do not include the `model` and `id` values. - For `before` or `after` — Include the `model` and `id` properties. |
 
 # Mode
 

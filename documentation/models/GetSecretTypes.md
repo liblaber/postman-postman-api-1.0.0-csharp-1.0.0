@@ -2,10 +2,10 @@
 
 **Properties**
 
-| Name | Type                     | Required | Description |
-| :--- | :----------------------- | :------- | :---------- |
-| Data | List<GetSecretTypesData> | ❌       |             |
-| Meta | GetSecretTypesMeta       | ❌       |             |
+| Name | Type                       | Required | Description |
+| :--- | :------------------------- | :------- | :---------- |
+| Data | List`<GetSecretTypesData>` | ❌       |             |
+| Meta | GetSecretTypesMeta         | ❌       |             |
 
 # GetSecretTypesData
 
